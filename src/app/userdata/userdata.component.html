@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="userdata">
+        <form>
+            <div class="form-group">
+                Name <input type="text" name="name" id="" class="form-control" [(ngModel)]="user.name">
+            </div>
+            <div class="form-group">
+                Today's Water intake <input type="number" name="water_intake" id="" class="form-control" [(ngModel)]="user.water_intake">
+            </div>
+            <div class="form-group">
+                Today's Calary burn <input type="number" name="calories" id="" class="form-control" [(ngModel)]="user.calories">
+            </div>
+            <div class="buttons">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a routerLink="/userdata"><button type="button" class="btn btn-primary btn-lg">ADD New</button></a> 
+                    </div>
+                    <div class="col-md-6">
+                        <button type="button" class="btn btn-success btn-lg" (click)=addData()>Submit</button><br>
+                    </div>
+                </div>
+                <div class="dashboard">
+                    <a routerLink="/dashboard"><button type="button" class="btn btn-info btn-lg">Show Dashboard</button></a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+

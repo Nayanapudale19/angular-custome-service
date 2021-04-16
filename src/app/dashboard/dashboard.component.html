@@ -1,0 +1,17 @@
+<h1 style="text-align: center;">Dashboard</h1>
+<div class="container">
+    <table class="table table-bordered table-striped">
+        <thead>
+            <th>Name</th>
+            <th>Water Intake</th>
+            <th>Calories</th>
+        </thead>
+        <tbody *ngFor="let u of users">
+            <tr>
+                <td>{{u.name}}</td>
+                <td>{{u.water_intake}}</td>
+                <td>{{u.calories}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
